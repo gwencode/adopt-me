@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import fetchBreedList from "./fetchBreedList";
+import fetchBreedList from "./Fetches/fetchBreedList";
 
 export default function useBreedList(animal) {
   const results = useQuery(["breedList", animal], fetchBreedList);
